@@ -1,0 +1,317 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffffff, #e0e7ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1920px;
+  margin: auto;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  max-width: 1352px;
+  margin: auto;
+}
+.header {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.container {
+  padding: 20px 0px;
+}
+.container_w {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  margin: auto;
+}
+.text-content {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-content h1 {
+  color: #333;
+  font-family: "Trebuchet MS";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 65.02px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+}
+
+.text-content p {
+  font-family: "Trebuchet MS";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.87px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+}
+
+.form-container {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+}
+
+.form-container button {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.form-container button {
+  background: #4285f4;
+}
+.google img {
+  border-style: none;
+  position: relative;
+  top: 2px;
+  right: 59px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 7px;
+}
+.google span {
+  position: relative;
+  bottom: 20px;
+  right: 27px;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Trebuchet MS";
+  font-size: 18px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-container small {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.login-link {
+  font-size: 1rem;
+  color: #007bff;
+  text-align: center;
+  text-decoration: none;
+  min-width: 120px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 13px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+form img {
+  border-style: none;
+  position: relative;
+  top: 2px;
+  right: 64px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 7px;
+}
+form span {
+  position: relative;
+  bottom: 20px;
+  right: 27px;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Trebuchet MS";
+  font-size: 18px;
+}
+
+@media (max-width: 886px) {
+  .text-content,
+  .form-container {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+/* Слайдер */
+
+.slider {
+  width: 1352px;
+}
+.scrolling-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  scroll-snap-align: start;
+  border-radius: 30px;
+  min-height: 200px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 887px) {
+  .slider {
+    width: 90%;
+  }
+}
+@media (max-width: 787px) {
+  .slider {
+    width: 80%;
+  }
+}
+@media (max-width: 687px) {
+  .slider {
+    width: 70%;
+  }
+}
+
+/* Блок About */
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.about-container {
+  background: white;
+  padding: 30px 40px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.about-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.about-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.join-button {
+  background: linear-gradient(90deg, #4e8cf5, #6c6df7);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: "background" 0.3s;
+}
+
+.join-button:hover {
+  background: linear-gradient(90deg, #6c6df7, #4e8cf5);
+}
+/* Блок Why join us? */
+.main {
+  display: flex;
+  flex: 1;
+  margin: 0;
+}
+
+.why-join h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px; 
+  max-width: 1352px;
+  padding: 20px;
+}
+
+.card_W {
+  background: white;
+  border-radius: 40px;
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.card_W:hover {
+  transform: translateY(-5px);
+}
+
+.card_W h3 {
+  margin-top: 0;
+}
+
+.card_W p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.empty {
+  visibility: hidden; 
+}
+.icon_item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
